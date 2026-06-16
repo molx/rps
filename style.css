@@ -192,3 +192,36 @@ h3 {
     text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
     word-break: break-word;
 }
+
+#tela-inicial {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff9a9e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    transition: opacity 0.5s ease;
+}
+
+#tela-inicial.escondido {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#btn-abrir {
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #ff0844;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    cursor: pointer;
+    animation: pulse 1.5s infinite;
+}
